@@ -7,4 +7,8 @@ public class Borrower {
     public Borrower(){
         this.booksBorrowed = new ArrayList<>();
     }
+
+    public int getBorrowedCount(){
+        return this.booksBorrowed.size();
+    }
 }
