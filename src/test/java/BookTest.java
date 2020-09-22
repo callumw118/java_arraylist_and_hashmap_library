@@ -15,4 +15,9 @@ public class BookTest {
     public void canGetTitle(){
         assertEquals("Fellowship of the Ring", book.getTitle());
     }
+
+    @Test
+    public void canGetAuthor(){
+        assertEquals("J.R.R Tolkein", book.getAuthor());
+    }
 }
