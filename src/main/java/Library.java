@@ -23,4 +23,8 @@ public class Library {
     public boolean stockHasSpace(){
         return getBookCount() < this.capacity;
     }
+
+    public void removeBook(Book book){
+        this.books.remove(book);
+    }
 }

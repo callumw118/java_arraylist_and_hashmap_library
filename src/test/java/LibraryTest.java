@@ -25,6 +25,13 @@ public class LibraryTest {
     }
 
     @Test
+    public void canRemoveBookFromLibrary(){
+        library.addBook(book1);
+        library.removeBook(book1);
+        assertEquals(0, library.getBookCount());
+    }
+
+    @Test
     public void canOnlyAddOneBookAsCapacityOfLibraryIsOne(){
         fullLibrary.addBook(book1);
         fullLibrary.addBook(book2);
