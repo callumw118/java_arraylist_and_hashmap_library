@@ -10,7 +10,7 @@ public class LibraryTest {
 
     @Before
     public void before(){
-        library = new Library();
+        library = new Library(10);
         book1 = new Book("Fellowship of the Ring", "J.R.R Tolkein", "Fantasy");
     }
 
